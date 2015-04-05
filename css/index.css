@@ -1,5 +1,48 @@
-body {
+.container {
+	position: absolute;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.container {
+	 width:980px;
+}
+
+.jumbotron {
+	position:relative;
+	color: #6e6e6e;
+}
+
+.jumbotron:after { 
+	content:"";
+     background: url("../img/geisel_in.jpg");
+     opacity: 0.2;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;
+}
+
+/*.feature-block.container{
+	position: relative;
+	width: 100%;
+
 	background-image:url("../img/geisel_in.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
+
+
+.geisel {
+	width: 100%;
+}
+
+   @media screen and (max-width: 1000px) {
+      .geisel {
+         width: 100%;
+         overflow: hidden;
+         margin: 0 -150px 0 -150px;
+      }
+   }
